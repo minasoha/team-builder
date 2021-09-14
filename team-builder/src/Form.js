@@ -11,8 +11,8 @@ export default function MemberForm(props){
 
     const {value, update, submit, memebers} = props;
 
-    const [error, setError] = useState("")
-
+    
+    
     const onChange = e =>{
         const name = e.target.name;
         const value = e.target.value;
@@ -27,15 +27,7 @@ export default function MemberForm(props){
     }
 
 
-    if(!onChange.name){
-        setError("Please enter a name!")
-    }else if(!onChange.email){
-        setError("Please enter an email!")
-    }else if(!onChange.role){
-        setError("Please set a role!")
-    }else{
-        setError("")
-    }
+    
   
     
 
